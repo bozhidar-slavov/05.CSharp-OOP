@@ -7,8 +7,9 @@
         public Dog(string name, Gender sex, int age)
             : base(name, sex, age)
         {
+            this.Species = Species.Dog;
         }
-        
+
         public override void MakeSound()
         {
             Console.WriteLine("Waf-waf, Bau-bau!");

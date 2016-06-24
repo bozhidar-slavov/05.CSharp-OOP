@@ -50,6 +50,7 @@
     <Compile Include="Gender.cs" />
     <Compile Include="ISoundable.cs" />
     <Compile Include="Kitten.cs" />
+    <Compile Include="Species.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tomcat.cs" />

@@ -7,6 +7,7 @@
         public Frog(string name, Gender sex, int age)
             : base(name, sex, age)
         {
+            this.Species = Species.Frog;
         }
 
         public override void MakeSound()

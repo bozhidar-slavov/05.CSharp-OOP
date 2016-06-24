@@ -23,6 +23,8 @@
             this.Age = age;
         }
 
+        public Species Species { get; set; }
+
         public int Age {
             get { return this.age; }
 
@@ -66,9 +68,9 @@
 
             foreach (var animal in animals)
             {
-                averageDogsAge = animals.Where(x => x is Dog).Average(x => x.Age);
-                averageFrogsAge = animals.Where(x => x is Frog).Average(x => x.Age);
-                averageCatsAge = animals.Where(x => x is Cat).Average(x => x.Age);
+                averageDogsAge = animals.Where(x => x.Species == Species.Dog).Average(x => x.Age);
+                averageFrogsAge = animals.Where(x => x.Species == Species.Frog).Average(x => x.Age);
+                averageCatsAge = animals.Where(x => x.Species == Species.Cat).Average(x => x.Age);
             }
 
             result.AppendFormat("Average dogs age: {0:F2} \n", averageDogsAge);

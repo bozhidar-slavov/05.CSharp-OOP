@@ -7,6 +7,7 @@ namespace AnimalHierarchy
         public Cat(string name, Gender sex, int age)
             : base(name, sex, age)
         {
+            this.Species = Species.Cat;
         }
 
         public override void MakeSound()
